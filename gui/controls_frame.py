@@ -31,7 +31,7 @@ class ControlsFrame(Frame):
         randomize_button.pack(side=BOTTOM)
 
     def is_duplicates_allowed_checked(self) -> bool:
-        return self._allow_duplicates
+        return self._allow_duplicates.get()
 
     def get_selected_type(self) -> str:
         return self._type_select_box.get()
