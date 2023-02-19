@@ -118,7 +118,7 @@ class d2ExoticRandomizer(object):
             while len(check_list) !=Input_Number:
                 if Input_Number > List_Length:
                     Input_Number = List_Length
-                Random_Number = random.randint(0, List_Length)
+                Random_Number = random.randint(1, List_Length)
                 Chosen_Weapon = Current_Selected_List[Random_Number]
                 if Chosen_Weapon not in check_list:
                     check_list.append(Chosen_Weapon)
