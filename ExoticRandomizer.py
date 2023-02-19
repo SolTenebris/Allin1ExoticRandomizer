@@ -106,7 +106,7 @@ class d2ExoticRandomizer(object):
         #Randomizer  
         List_Selection = self.Window_Class_Select.get()
         Current_Selected_List = Equipment_List[List_Selection]
-        List_Length = int(len(Current_Selected_List))
+        List_Length = int(len(Current_Selected_List) - 1)
         print(List_Length)
         if self.Dupe_is_Checked.get() == 1:
             for pick in range(Input_Number):
@@ -115,7 +115,7 @@ class d2ExoticRandomizer(object):
                 self.Window_Results.insert(INSERT, f'{Chosen_Weapon}\n')
         else:
             check_list = []
-            while len(check_list) !=Input_Number:
+            while len(check_list) != Input_Number:
                 if Input_Number > List_Length:
                     Input_Number = List_Length
                 Random_Number = random.randint(1, List_Length)
