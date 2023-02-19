@@ -1,5 +1,5 @@
-from GearRandomizer import GearRandomizer
-from Window import Window
+from gear_randomizer import GearRandomizer
+from gui.window import Window
 
 # Program entrypoint
 if __name__ == "__main__":
