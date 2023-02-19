@@ -1,0 +1,2 @@
+# Allin1ExoticRandomizer
+D2ExoticRandomizer
